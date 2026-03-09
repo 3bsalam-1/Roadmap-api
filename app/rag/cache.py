@@ -27,10 +27,17 @@ class GenerationCache:
                     # Use local fallback directory in app folder
                     logger.warning(f"Parent directory {self.cache_dir.parent} does not exist, using local fallback")
                     self.cache_dir = Path(__file__).parent.parent / "data" / "generated"
-                self.cache_dir.mkdir(parents=True, exist_ok=True)
+                else:
+                    # Parent exists, try to create the directory
+                    self.cache_dir.mkdir(parents=True, exist_ok=True)
         except PermissionError as e:
             logger.warning(f"Cannot create cache directory {self.cache_dir}: {e}")
             # Fall back to using a local directory if cloud storage is not available
+            self.cache_dir = Path(__file__).parent.parent / "data" / "generated"
+            self.cache_dir.mkdir(parents=True, exist_ok=True)
+        except FileNotFoundError as e:
+            logger.warning(f"Cannot create cache directory {self.cache_dir}: {e}")
+            # Fall back to using a local directory
             self.cache_dir = Path(__file__).parent.parent / "data" / "generated"
             self.cache_dir.mkdir(parents=True, exist_ok=True)
         logger.info(f"GenerationCache initialized at: {self.cache_dir}")

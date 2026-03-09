@@ -5,12 +5,25 @@ from fastapi.responses import JSONResponse
 from slowapi import _rate_limit_exceeded_handler
 from slowapi.errors import RateLimitExceeded
 import time
+import os
+
+print("DEBUG: Starting app initialization...")
+print(f"DEBUG: PORT env var = {os.environ.get('PORT', 'not set')}")
 
 from app.core.config import settings
+print(f"DEBUG: Settings loaded. DEBUG={settings.DEBUG}")
+
 from app.core.logging import logger
+print("DEBUG: Logger configured")
+
 from app.core.limiter import limiter
+print("DEBUG: Limiter imported")
+
 from app.api.routes import roadmap, admin
-from app.rag.retriever import get_vector_store
+print("DEBUG: Routes imported")
+
+# Don't import retriever at module level - defer to lazy loading
+# from app.rag.retriever import get_vector_store
 
 
 # Rate limiter is now imported from app.core.limiter
