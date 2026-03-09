@@ -8,7 +8,7 @@ from app.core.logging import logger
 from app.utils.cloudinary_utils import upload_pdf_to_cloudinary, list_cloudinary_pdfs
 from app.rag import ingestor
 from langchain_community.document_loaders import PyPDFLoader
-from langchain_text_splitter import RecursiveCharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 router = APIRouter(prefix="/admin", tags=["admin"])
 
