@@ -1,0 +1,265 @@
+{
+  "track": "React Beginner Learning Roadmap",
+  "total_duration_weeks": 8,
+  "level": "beginner",
+  "phases": [
+    {
+      "phase_number": 1,
+      "title": "Foundations of JavaScript & Web Development",
+      "duration_weeks": 2,
+      "description": "Refresh core JavaScript concepts and understand basic web development needed for React.",
+      "topics": [
+        {
+          "name": "JavaScript Essentials",
+          "subtopics": [
+            "Variables & Data Types",
+            "Functions",
+            "Arrays & Objects",
+            "ES6 Syntax (let/const, arrow functions, template literals)"
+          ],
+          "resources": [
+            {
+              "type": "course",
+              "title": "JavaScript Essentials",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
+            },
+            {
+              "type": "video",
+              "title": "JavaScript Crash Course for Beginners",
+              "url": "https://www.youtube.com/watch?v=hdI2bqOjy3c"
+            }
+          ],
+          "estimated_hours": 8
+        },
+        {
+          "name": "HTML & CSS Basics",
+          "subtopics": [
+            "HTML Structure",
+            "CSS Selectors",
+            "Box Model",
+            "Responsive Design Basics"
+          ],
+          "resources": [
+            {
+              "type": "course",
+              "title": "HTML & CSS for Beginners",
+              "url": "https://www.freecodecamp.org/learn/"
+            }
+          ],
+          "estimated_hours": 6
+        }
+      ]
+    },
+    {
+      "phase_number": 2,
+      "title": "Getting Started with React",
+      "duration_weeks": 2,
+      "description": "Learn React fundamentals, how to set up your environment, and create your first components.",
+      "topics": [
+        {
+          "name": "React Introduction & Setup",
+          "subtopics": [
+            "What is React?",
+            "Create React App",
+            "Project Structure"
+          ],
+          "resources": [
+            {
+              "type": "documentation",
+              "title": "React Getting Started",
+              "url": "https://react.dev/learn"
+            },
+            {
+              "type": "video",
+              "title": "React JS Crash Course",
+              "url": "https://www.youtube.com/watch?v=w7ejDZ8SWv8"
+            }
+          ],
+          "estimated_hours": 4
+        },
+        {
+          "name": "JSX & Rendering Elements",
+          "subtopics": [
+            "JSX Syntax",
+            "Rendering Elements",
+            "Expression in JSX"
+          ],
+          "resources": [
+            {
+              "type": "documentation",
+              "title": "Introducing JSX",
+              "url": "https://react.dev/reference/react/JSX"
+            }
+          ],
+          "estimated_hours": 4
+        },
+        {
+          "name": "Components & Props",
+          "subtopics": [
+            "Functional Components",
+            "Props",
+            "Component Composition"
+          ],
+          "resources": [
+            {
+              "type": "documentation",
+              "title": "Components and Props",
+              "url": "https://react.dev/reference/react/Component"
+            }
+          ],
+          "estimated_hours": 6
+        }
+      ]
+    },
+    {
+      "phase_number": 3,
+      "title": "State, Events, and Basic Interactivity",
+      "duration_weeks": 2,
+      "description": "Understand how to use state, handle events, and add interactivity to React apps.",
+      "topics": [
+        {
+          "name": "State & useState Hook",
+          "subtopics": [
+            "What is State?",
+            "Using useState",
+            "Updating State"
+          ],
+          "resources": [
+            {
+              "type": "documentation",
+              "title": "State: useState Hook",
+              "url": "https://react.dev/reference/react/useState"
+            }
+          ],
+          "estimated_hours": 6
+        },
+        {
+          "name": "Handling Events",
+          "subtopics": [
+            "Event Handling in React",
+            "Passing Arguments",
+            "Common Event Types"
+          ],
+          "resources": [
+            {
+              "type": "documentation",
+              "title": "Handling Events",
+              "url": "https://react.dev/learn/responding-to-events"
+            }
+          ],
+          "estimated_hours": 4
+        },
+        {
+          "name": "Conditional Rendering",
+          "subtopics": [
+            "if/else in JSX",
+            "Ternary Operators",
+            "Short-circuit Evaluation"
+          ],
+          "resources": [
+            {
+              "type": "documentation",
+              "title": "Conditional Rendering",
+              "url": "https://react.dev/learn/conditional-rendering"
+            }
+          ],
+          "estimated_hours": 3
+        }
+      ]
+    },
+    {
+      "phase_number": 4,
+      "title": "Lists, Keys, and Basic Forms",
+      "duration_weeks": 1,
+      "description": "Learn to render lists, use keys, and handle basic form inputs in React.",
+      "topics": [
+        {
+          "name": "Rendering Lists & Using Keys",
+          "subtopics": [
+            "Mapping Arrays to Components",
+            "Key Prop Importance"
+          ],
+          "resources": [
+            {
+              "type": "documentation",
+              "title": "Rendering Lists",
+              "url": "https://react.dev/learn/rendering-lists"
+            }
+          ],
+          "estimated_hours": 4
+        },
+        {
+          "name": "Handling Forms",
+          "subtopics": [
+            "Form Elements in React",
+            "Controlled Components",
+            "Handling Input Changes"
+          ],
+          "resources": [
+            {
+              "type": "documentation",
+              "title": "Forms",
+              "url": "https://react.dev/learn/forms"
+            }
+          ],
+          "estimated_hours": 4
+        }
+      ]
+    },
+    {
+      "phase_number": 5,
+      "title": "Basic Project & Next Steps",
+      "duration_weeks": 1,
+      "description": "Build a simple React application and learn about resources for further learning.",
+      "topics": [
+        {
+          "name": "Building a Simple React App",
+          "subtopics": [
+            "Project Planning",
+            "Component Structure",
+            "State & Props Usage"
+          ],
+          "resources": [
+            {
+              "type": "course",
+              "title": "Build a Simple React App (Todo List)",
+              "url": "https://www.freecodecamp.org/news/react-beginner-project-todo-app/"
+            }
+          ],
+          "estimated_hours": 6
+        },
+        {
+          "name": "Next Steps & Community",
+          "subtopics": [
+            "React Documentation",
+            "Online Communities",
+            "Further Learning Suggestions"
+          ],
+          "resources": [
+            {
+              "type": "documentation",
+              "title": "React Official Documentation",
+              "url": "https://react.dev/"
+            },
+            {
+              "type": "course",
+              "title": "React Community Resources",
+              "url": "https://react.dev/community"
+            }
+          ],
+          "estimated_hours": 2
+        }
+      ]
+    }
+  ],
+  "prerequisites": [
+    "Basic understanding of HTML and CSS",
+    "Basic JavaScript knowledge"
+  ],
+  "career_outcomes": [
+    "Able to build beginner-level React applications",
+    "Prepared to pursue junior front-end developer roles",
+    "Ready to advance to intermediate React concepts and frameworks (Redux, Routing, etc.)"
+  ],
+  "source": "llm_generated"
+}

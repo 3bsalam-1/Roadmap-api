@@ -1,0 +1,367 @@
+{
+  "track": "Machine Learning",
+  "total_duration_weeks": 24,
+  "level": "beginner",
+  "phases": [
+    {
+      "phase_number": 1,
+      "title": "Fundamentals of Programming and Math",
+      "duration_weeks": 4,
+      "description": "Establish foundational skills in Python programming and mathematics essential for machine learning.",
+      "topics": [
+        {
+          "name": "Python Programming Basics",
+          "subtopics": [
+            "Variables",
+            "Data Types",
+            "Control Flow",
+            "Functions",
+            "Libraries (NumPy, Pandas)"
+          ],
+          "resources": [
+            {
+              "type": "course",
+              "title": "Python for Everybody",
+              "url": "https://www.coursera.org/specializations/python"
+            },
+            {
+              "type": "book",
+              "title": "Automate the Boring Stuff with Python",
+              "url": "https://automatetheboringstuff.com/"
+            }
+          ],
+          "estimated_hours": 15
+        },
+        {
+          "name": "Mathematics for Machine Learning",
+          "subtopics": [
+            "Linear Algebra",
+            "Probability",
+            "Statistics",
+            "Calculus Basics"
+          ],
+          "resources": [
+            {
+              "type": "course",
+              "title": "Mathematics for Machine Learning Specialization",
+              "url": "https://www.coursera.org/specializations/mathematics-machine-learning"
+            },
+            {
+              "type": "video",
+              "title": "StatQuest with Josh Starmer (YouTube)",
+              "url": "https://www.youtube.com/user/joshstarmer"
+            }
+          ],
+          "estimated_hours": 15
+        }
+      ]
+    },
+    {
+      "phase_number": 2,
+      "title": "Core Machine Learning Concepts",
+      "duration_weeks": 6,
+      "description": "Learn the key concepts, types, and algorithms of machine learning.",
+      "topics": [
+        {
+          "name": "Introduction to Machine Learning",
+          "subtopics": [
+            "Supervised vs Unsupervised Learning",
+            "Applications",
+            "Evaluation Metrics"
+          ],
+          "resources": [
+            {
+              "type": "course",
+              "title": "Machine Learning by Andrew Ng",
+              "url": "https://www.coursera.org/learn/machine-learning"
+            },
+            {
+              "type": "video",
+              "title": "What is Machine Learning? (YouTube)",
+              "url": "https://www.youtube.com/watch?v=ukzFI9rgwfU"
+            }
+          ],
+          "estimated_hours": 10
+        },
+        {
+          "name": "Supervised Learning Algorithms",
+          "subtopics": [
+            "Linear Regression",
+            "Logistic Regression",
+            "Decision Trees",
+            "Random Forests",
+            "Support Vector Machines"
+          ],
+          "resources": [
+            {
+              "type": "course",
+              "title": "Supervised Learning with scikit-learn",
+              "url": "https://www.datacamp.com/courses/supervised-learning-with-scikit-learn"
+            },
+            {
+              "type": "documentation",
+              "title": "scikit-learn Documentation",
+              "url": "https://scikit-learn.org/stable/documentation.html"
+            }
+          ],
+          "estimated_hours": 15
+        },
+        {
+          "name": "Unsupervised Learning Algorithms",
+          "subtopics": [
+            "Clustering (K-means, Hierarchical)",
+            "Dimensionality Reduction (PCA, t-SNE)"
+          ],
+          "resources": [
+            {
+              "type": "course",
+              "title": "Unsupervised Learning in Python",
+              "url": "https://www.datacamp.com/courses/unsupervised-learning-in-python"
+            },
+            {
+              "type": "documentation",
+              "title": "scikit-learn Clustering",
+              "url": "https://scikit-learn.org/stable/modules/clustering.html"
+            }
+          ],
+          "estimated_hours": 10
+        },
+        {
+          "name": "Model Evaluation and Selection",
+          "subtopics": [
+            "Cross Validation",
+            "Bias-Variance Tradeoff",
+            "Confusion Matrix",
+            "ROC Curve",
+            "Hyperparameter Tuning"
+          ],
+          "resources": [
+            {
+              "type": "course",
+              "title": "Introduction to Model Evaluation",
+              "url": "https://www.coursera.org/learn/machine-learning-projects"
+            },
+            {
+              "type": "video",
+              "title": "StatQuest: Model Evaluation",
+              "url": "https://www.youtube.com/watch?v=85dtiMz9tSo"
+            }
+          ],
+          "estimated_hours": 10
+        }
+      ]
+    },
+    {
+      "phase_number": 3,
+      "title": "Practical Machine Learning",
+      "duration_weeks": 6,
+      "description": "Apply machine learning concepts to real-world datasets using Python and popular libraries.",
+      "topics": [
+        {
+          "name": "Data Preprocessing",
+          "subtopics": [
+            "Data Cleaning",
+            "Feature Engineering",
+            "Normalization",
+            "Handling Missing Values"
+          ],
+          "resources": [
+            {
+              "type": "course",
+              "title": "Data Science: Data Preparation",
+              "url": "https://www.coursera.org/learn/data-preparation"
+            },
+            {
+              "type": "documentation",
+              "title": "Pandas Documentation",
+              "url": "https://pandas.pydata.org/docs/"
+            }
+          ],
+          "estimated_hours": 10
+        },
+        {
+          "name": "Building and Training ML Models",
+          "subtopics": [
+            "Pipeline Creation",
+            "Model Training",
+            "Model Testing",
+            "Deployment Basics"
+          ],
+          "resources": [
+            {
+              "type": "course",
+              "title": "Applied Machine Learning in Python",
+              "url": "https://www.coursera.org/learn/applied-machine-learning"
+            },
+            {
+              "type": "documentation",
+              "title": "Scikit-learn User Guide",
+              "url": "https://scikit-learn.org/stable/user_guide.html"
+            }
+          ],
+          "estimated_hours": 15
+        },
+        {
+          "name": "Project: End-to-End ML Pipeline",
+          "subtopics": [
+            "Dataset Selection",
+            "Exploratory Data Analysis",
+            "Model Building",
+            "Evaluation",
+            "Reporting"
+          ],
+          "resources": [
+            {
+              "type": "course",
+              "title": "Machine Learning Project",
+              "url": "https://www.kaggle.com/learn/intro-to-machine-learning"
+            },
+            {
+              "type": "video",
+              "title": "Kaggle: How to Build an End-to-End ML Project",
+              "url": "https://www.youtube.com/watch?v=0Lt9w-BxKFQ"
+            }
+          ],
+          "estimated_hours": 15
+        }
+      ]
+    },
+    {
+      "phase_number": 4,
+      "title": "Advanced Topics & Deep Learning",
+      "duration_weeks": 6,
+      "description": "Explore deeper machine learning topics and begin learning about neural networks and deep learning.",
+      "topics": [
+        {
+          "name": "Ensemble Methods",
+          "subtopics": [
+            "Bagging",
+            "Boosting",
+            "Stacking",
+            "XGBoost"
+          ],
+          "resources": [
+            {
+              "type": "course",
+              "title": "Ensemble Methods in Machine Learning",
+              "url": "https://www.coursera.org/learn/ensemble-methods"
+            },
+            {
+              "type": "documentation",
+              "title": "XGBoost Documentation",
+              "url": "https://xgboost.readthedocs.io/en/latest/"
+            }
+          ],
+          "estimated_hours": 10
+        },
+        {
+          "name": "Introduction to Neural Networks & Deep Learning",
+          "subtopics": [
+            "Perceptron",
+            "Multilayer Networks",
+            "Activation Functions",
+            "Backpropagation"
+          ],
+          "resources": [
+            {
+              "type": "course",
+              "title": "Deep Learning Specialization (Andrew Ng)",
+              "url": "https://www.coursera.org/specializations/deep-learning"
+            },
+            {
+              "type": "video",
+              "title": "3Blue1Brown Neural Networks",
+              "url": "https://www.youtube.com/watch?v=aircAruvnKk"
+            }
+          ],
+          "estimated_hours": 15
+        },
+        {
+          "name": "Working with TensorFlow and PyTorch",
+          "subtopics": [
+            "Basic Operations",
+            "Building Simple Models",
+            "Training and Evaluation"
+          ],
+          "resources": [
+            {
+              "type": "course",
+              "title": "Intro to TensorFlow for Deep Learning",
+              "url": "https://www.udacity.com/course/intro-to-tensorflow-for-deep-learning--ud187"
+            },
+            {
+              "type": "documentation",
+              "title": "PyTorch Tutorials",
+              "url": "https://pytorch.org/tutorials/"
+            }
+          ],
+          "estimated_hours": 10
+        }
+      ]
+    },
+    {
+      "phase_number": 5,
+      "title": "Capstone Project & Career Preparation",
+      "duration_weeks": 2,
+      "description": "Apply learned concepts in a capstone project and prepare for job applications in machine learning.",
+      "topics": [
+        {
+          "name": "Capstone Project",
+          "subtopics": [
+            "Problem Definition",
+            "Data Collection",
+            "Model Development",
+            "Results Presentation"
+          ],
+          "resources": [
+            {
+              "type": "course",
+              "title": "Machine Learning Capstone",
+              "url": "https://www.coursera.org/learn/machine-learning-projects"
+            },
+            {
+              "type": "video",
+              "title": "Kaggle Competition Walkthrough",
+              "url": "https://www.youtube.com/watch?v=3kTQkQ2VgA0"
+            }
+          ],
+          "estimated_hours": 15
+        },
+        {
+          "name": "Career Preparation",
+          "subtopics": [
+            "Portfolio Building",
+            "Interview Preparation",
+            "Resume Writing",
+            "Networking"
+          ],
+          "resources": [
+            {
+              "type": "course",
+              "title": "How to Land a Machine Learning Job",
+              "url": "https://www.datacamp.com/courses/how-to-land-a-machine-learning-job"
+            },
+            {
+              "type": "video",
+              "title": "How to Get a Job in Machine Learning",
+              "url": "https://www.youtube.com/watch?v=7eh4d6sabA0"
+            }
+          ],
+          "estimated_hours": 5
+        }
+      ]
+    }
+  ],
+  "prerequisites": [
+    "Basic computer literacy",
+    "High-school level mathematics"
+  ],
+  "career_outcomes": [
+    "Machine Learning Engineer",
+    "Data Scientist",
+    "AI Researcher",
+    "ML Developer",
+    "Business Analyst (with ML skills)"
+  ],
+  "source": "llm_generated"
+}

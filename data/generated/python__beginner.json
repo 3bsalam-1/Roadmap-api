@@ -1,0 +1,349 @@
+{
+  "track": "Python",
+  "total_duration_weeks": 20,
+  "level": "beginner",
+  "phases": [
+    {
+      "phase_number": 1,
+      "title": "Fundamentals of Python",
+      "duration_weeks": 4,
+      "description": "Establish a strong foundation in Python syntax, data types, and basic programming constructs.",
+      "topics": [
+        {
+          "name": "Introduction to Python",
+          "subtopics": [
+            "History and Features",
+            "Installing Python",
+            "Running Python Scripts",
+            "Using IDLE/Jupyter Notebook"
+          ],
+          "resources": [
+            {
+              "type": "course",
+              "title": "Python for Beginners",
+              "url": "https://www.coursera.org/learn/python-for-everybody"
+            },
+            {
+              "type": "book",
+              "title": "Automate the Boring Stuff with Python (Chapter 1)",
+              "url": "https://automatetheboringstuff.com/2e/chapter1/"
+            }
+          ],
+          "estimated_hours": 5
+        },
+        {
+          "name": "Basic Syntax and Data Types",
+          "subtopics": [
+            "Variables",
+            "Numeric Types",
+            "Strings",
+            "Booleans",
+            "Type Conversion"
+          ],
+          "resources": [
+            {
+              "type": "documentation",
+              "title": "Python Official Docs – Data Types",
+              "url": "https://docs.python.org/3/library/stdtypes.html"
+            },
+            {
+              "type": "video",
+              "title": "Python Data Types Explained (YouTube)",
+              "url": "https://www.youtube.com/watch?v=khKv-8kOY7Y"
+            }
+          ],
+          "estimated_hours": 6
+        },
+        {
+          "name": "Operators and Expressions",
+          "subtopics": [
+            "Arithmetic Operators",
+            "Comparison Operators",
+            "Logical Operators",
+            "Assignment Operators"
+          ],
+          "resources": [
+            {
+              "type": "course",
+              "title": "Python Operators and Expressions",
+              "url": "https://www.udemy.com/course/pythonforbeginners/"
+            }
+          ],
+          "estimated_hours": 3
+        },
+        {
+          "name": "Control Flow",
+          "subtopics": [
+            "If Statements",
+            "For Loops",
+            "While Loops",
+            "Break and Continue"
+          ],
+          "resources": [
+            {
+              "type": "book",
+              "title": "Automate the Boring Stuff with Python (Chapter 2)",
+              "url": "https://automatetheboringstuff.com/2e/chapter2/"
+            }
+          ],
+          "estimated_hours": 6
+        }
+      ]
+    },
+    {
+      "phase_number": 2,
+      "title": "Data Structures and Functions",
+      "duration_weeks": 4,
+      "description": "Learn to work with core Python data structures and write reusable code using functions.",
+      "topics": [
+        {
+          "name": "Lists, Tuples, and Sets",
+          "subtopics": [
+            "List Operations",
+            "Tuple Usage",
+            "Set Operations",
+            "List Comprehensions"
+          ],
+          "resources": [
+            {
+              "type": "documentation",
+              "title": "Python Lists and Tuples",
+              "url": "https://docs.python.org/3/tutorial/datastructures.html"
+            }
+          ],
+          "estimated_hours": 6
+        },
+        {
+          "name": "Dictionaries",
+          "subtopics": [
+            "Dictionary Creation",
+            "Access and Manipulation",
+            "Dictionary Methods"
+          ],
+          "resources": [
+            {
+              "type": "course",
+              "title": "Python Dictionaries Tutorial",
+              "url": "https://realpython.com/python-dicts/"
+            }
+          ],
+          "estimated_hours": 4
+        },
+        {
+          "name": "Functions",
+          "subtopics": [
+            "Defining Functions",
+            "Arguments and Return Values",
+            "Scope and Lifetime",
+            "Lambda Functions"
+          ],
+          "resources": [
+            {
+              "type": "book",
+              "title": "Python Crash Course (Chapter 8)",
+              "url": "https://ehmatthes.github.io/pcc/chapter_08/"
+            }
+          ],
+          "estimated_hours": 6
+        },
+        {
+          "name": "Error Handling",
+          "subtopics": [
+            "Try-Except Blocks",
+            "Exception Types",
+            "Finally and Else"
+          ],
+          "resources": [
+            {
+              "type": "documentation",
+              "title": "Python Official Docs – Errors and Exceptions",
+              "url": "https://docs.python.org/3/tutorial/errors.html"
+            }
+          ],
+          "estimated_hours": 3
+        }
+      ]
+    },
+    {
+      "phase_number": 3,
+      "title": "Object-Oriented Programming and Modules",
+      "duration_weeks": 4,
+      "description": "Understand OOP principles and learn to structure code using classes and modules.",
+      "topics": [
+        {
+          "name": "Classes and Objects",
+          "subtopics": [
+            "Class Definition",
+            "Attributes and Methods",
+            "Inheritance",
+            "Polymorphism"
+          ],
+          "resources": [
+            {
+              "type": "course",
+              "title": "Object-Oriented Programming in Python",
+              "url": "https://www.codecademy.com/learn/learn-python-3/modules/python3_oop"
+            }
+          ],
+          "estimated_hours": 6
+        },
+        {
+          "name": "Modules and Packages",
+          "subtopics": [
+            "Importing Modules",
+            "Creating Packages",
+            "Standard Library Overview"
+          ],
+          "resources": [
+            {
+              "type": "documentation",
+              "title": "Python Official Docs – Modules",
+              "url": "https://docs.python.org/3/tutorial/modules.html"
+            }
+          ],
+          "estimated_hours": 4
+        },
+        {
+          "name": "File I/O",
+          "subtopics": [
+            "Reading and Writing Files",
+            "Working with CSV and JSON",
+            "Handling File Exceptions"
+          ],
+          "resources": [
+            {
+              "type": "book",
+              "title": "Automate the Boring Stuff with Python (Chapter 8)",
+              "url": "https://automatetheboringstuff.com/2e/chapter8/"
+            }
+          ],
+          "estimated_hours": 5
+        }
+      ]
+    },
+    {
+      "phase_number": 4,
+      "title": "Intermediate Concepts and Applications",
+      "duration_weeks": 4,
+      "description": "Explore more advanced Python concepts, libraries, and practical applications.",
+      "topics": [
+        {
+          "name": "Iterators and Generators",
+          "subtopics": [
+            "Iterator Protocol",
+            "Generator Functions",
+            "Generator Expressions"
+          ],
+          "resources": [
+            {
+              "type": "video",
+              "title": "Python Generators Explained",
+              "url": "https://www.youtube.com/watch?v=bD05uGo_sVI"
+            }
+          ],
+          "estimated_hours": 4
+        },
+        {
+          "name": "Decorators",
+          "subtopics": [
+            "Function Decorators",
+            "Class Decorators",
+            "Practical Use Cases"
+          ],
+          "resources": [
+            {
+              "type": "course",
+              "title": "Understanding Python Decorators",
+              "url": "https://realpython.com/primer-on-python-decorators/"
+            }
+          ],
+          "estimated_hours": 3
+        },
+        {
+          "name": "Virtual Environments and Package Management",
+          "subtopics": [
+            "pip and PyPI",
+            "venv and virtualenv",
+            "Requirements Files"
+          ],
+          "resources": [
+            {
+              "type": "documentation",
+              "title": "Managing Packages with pip",
+              "url": "https://packaging.python.org/tutorials/installing-packages/"
+            }
+          ],
+          "estimated_hours": 3
+        },
+        {
+          "name": "Popular Libraries",
+          "subtopics": [
+            "Requests for HTTP",
+            "Pandas for Data Analysis",
+            "Matplotlib for Visualization"
+          ],
+          "resources": [
+            {
+              "type": "course",
+              "title": "Introduction to Pandas and Matplotlib",
+              "url": "https://www.datacamp.com/courses/intro-to-python-for-data-science"
+            }
+          ],
+          "estimated_hours": 6
+        }
+      ]
+    },
+    {
+      "phase_number": 5,
+      "title": "Project Work and Advanced Topics",
+      "duration_weeks": 4,
+      "description": "Apply your knowledge through projects and explore advanced areas to transition to intermediate/advanced level.",
+      "topics": [
+        {
+          "name": "Building Python Projects",
+          "subtopics": [
+            "Project Planning",
+            "Version Control with Git",
+            "Testing and Debugging"
+          ],
+          "resources": [
+            {
+              "type": "course",
+              "title": "Build Python Projects",
+              "url": "https://www.freecodecamp.org/news/python-projects-junior-developer/"
+            }
+          ],
+          "estimated_hours": 8
+        },
+        {
+          "name": "Advanced Topics Overview",
+          "subtopics": [
+            "Async Programming",
+            "Web Development (Flask/Django)",
+            "Data Science Introduction"
+          ],
+          "resources": [
+            {
+              "type": "video",
+              "title": "Advanced Python Concepts",
+              "url": "https://www.youtube.com/watch?v=HGOBQPFzWKo"
+            }
+          ],
+          "estimated_hours": 6
+        }
+      ]
+    }
+  ],
+  "prerequisites": [
+    "Basic computer literacy",
+    "Familiarity with using a text editor"
+  ],
+  "career_outcomes": [
+    "Python Developer",
+    "Data Analyst",
+    "Web Developer",
+    "Automation Engineer",
+    "Software Engineer"
+  ],
+  "source": "llm_generated"
+}

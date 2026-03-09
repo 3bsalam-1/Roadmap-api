@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: roadmap-api
+    runtime: docker
+    plan: free
+    envVars:
+      - key: GITHUB_TOKEN
+        sync: false
+      - key: PINECONE_API_KEY
+        sync: false
+      - key: CLOUDINARY_CLOUD_NAME
+        sync: false
+      - key: CLOUDINARY_API_KEY
+        sync: false
+      - key: CLOUDINARY_API_SECRET
+        sync: false
+      - key: ADMIN_API_KEY
+        sync: false
+      - key: GENERATED_CACHE_DIR
+        value: /data/generated
+    disk:
+      name: roadmap-data
+      mountPath: /data
+      sizeGB: 1

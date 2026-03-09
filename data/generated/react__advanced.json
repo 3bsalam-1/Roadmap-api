@@ -1,0 +1,367 @@
+{
+  "track": "React Advanced Learning Roadmap",
+  "total_duration_weeks": 16,
+  "level": "advanced",
+  "phases": [
+    {
+      "phase_number": 1,
+      "title": "Advanced React Fundamentals",
+      "duration_weeks": 3,
+      "description": "Deep dive into React's advanced concepts, patterns, and hooks.",
+      "topics": [
+        {
+          "name": "Advanced Component Patterns",
+          "subtopics": [
+            "Compound Components",
+            "Render Props",
+            "Higher-Order Components",
+            "Controlled vs Uncontrolled Components"
+          ],
+          "resources": [
+            {
+              "type": "documentation",
+              "title": "React Patterns",
+              "url": "https://reactpatterns.com/"
+            },
+            {
+              "type": "video",
+              "title": "Advanced React Component Patterns",
+              "url": "https://www.youtube.com/watch?v=FuvgEEbGh4U"
+            }
+          ],
+          "estimated_hours": 8
+        },
+        {
+          "name": "Hooks Deep Dive",
+          "subtopics": [
+            "Custom Hooks",
+            "useReducer",
+            "useCallback",
+            "useMemo",
+            "useRef",
+            "Context with Hooks"
+          ],
+          "resources": [
+            {
+              "type": "documentation",
+              "title": "React Hooks Docs",
+              "url": "https://react.dev/reference/react"
+            },
+            {
+              "type": "course",
+              "title": "Epic React: Hooks",
+              "url": "https://epicreact.dev/hooks/"
+            }
+          ],
+          "estimated_hours": 10
+        },
+        {
+          "name": "Context API & State Management Patterns",
+          "subtopics": [
+            "Context API Advanced Usage",
+            "Performance Optimization with Context",
+            "Global State Patterns"
+          ],
+          "resources": [
+            {
+              "type": "video",
+              "title": "React Context API - Advanced",
+              "url": "https://www.youtube.com/watch?v=5LrDIWkK_Bc"
+            },
+            {
+              "type": "documentation",
+              "title": "Context API Docs",
+              "url": "https://react.dev/reference/react/Context"
+            }
+          ],
+          "estimated_hours": 6
+        }
+      ]
+    },
+    {
+      "phase_number": 2,
+      "title": "Performance Optimization & Testing",
+      "duration_weeks": 4,
+      "description": "Focus on performance profiling, optimization techniques, and robust testing strategies.",
+      "topics": [
+        {
+          "name": "Performance Profiling",
+          "subtopics": [
+            "React DevTools Profiler",
+            "Identifying Bottlenecks",
+            "Memoization Strategies",
+            "Lazy Loading Components"
+          ],
+          "resources": [
+            {
+              "type": "video",
+              "title": "React Performance Optimization",
+              "url": "https://www.youtube.com/watch?v=OV6lP3t2BzE"
+            },
+            {
+              "type": "documentation",
+              "title": "React Performance Docs",
+              "url": "https://react.dev/learn/optimizing-performance"
+            }
+          ],
+          "estimated_hours": 8
+        },
+        {
+          "name": "Testing React Applications",
+          "subtopics": [
+            "Unit Testing with Jest",
+            "Integration Testing with React Testing Library",
+            "End-to-End Testing with Cypress",
+            "Mocking and Test Utilities"
+          ],
+          "resources": [
+            {
+              "type": "course",
+              "title": "Testing JavaScript with Kent C. Dodds",
+              "url": "https://testingjavascript.com/"
+            },
+            {
+              "type": "documentation",
+              "title": "React Testing Library Docs",
+              "url": "https://testing-library.com/docs/react-testing-library/intro/"
+            }
+          ],
+          "estimated_hours": 10
+        },
+        {
+          "name": "Error Boundaries & Recovery",
+          "subtopics": [
+            "Error Boundary Implementation",
+            "Graceful Degradation",
+            "Fallback UI Patterns"
+          ],
+          "resources": [
+            {
+              "type": "documentation",
+              "title": "Error Boundaries in React",
+              "url": "https://react.dev/reference/react/Component#catching-rendering-errors"
+            },
+            {
+              "type": "video",
+              "title": "Handling Errors in React",
+              "url": "https://www.youtube.com/watch?v=ZJwrIwKDgEQ"
+            }
+          ],
+          "estimated_hours": 4
+        }
+      ]
+    },
+    {
+      "phase_number": 3,
+      "title": "Architecture & Ecosystem Integration",
+      "duration_weeks": 3,
+      "description": "Learn advanced architecture patterns, integrate with modern tools, and manage large-scale apps.",
+      "topics": [
+        {
+          "name": "React Application Architecture",
+          "subtopics": [
+            "Feature-based Folder Structure",
+            "Micro-frontend Architectures",
+            "Dependency Management",
+            "Code Splitting"
+          ],
+          "resources": [
+            {
+              "type": "book",
+              "title": "Design Patterns for React",
+              "url": "https://www.packtpub.com/product/react-design-patterns-and-best-practices/9781786464538"
+            },
+            {
+              "type": "documentation",
+              "title": "React Code Splitting",
+              "url": "https://react.dev/reference/react/Suspense"
+            }
+          ],
+          "estimated_hours": 6
+        },
+        {
+          "name": "State Management Libraries",
+          "subtopics": [
+            "Redux Toolkit Advanced Usage",
+            "MobX",
+            "Recoil",
+            "Zustand"
+          ],
+          "resources": [
+            {
+              "type": "documentation",
+              "title": "Redux Toolkit Docs",
+              "url": "https://redux-toolkit.js.org/"
+            },
+            {
+              "type": "video",
+              "title": "State Management in React",
+              "url": "https://www.youtube.com/watch?v=35lXWvCuM8o"
+            }
+          ],
+          "estimated_hours": 8
+        },
+        {
+          "name": "Integrating with TypeScript",
+          "subtopics": [
+            "React with TypeScript Advanced Typing",
+            "Generics in Components",
+            "Typesafe Contexts and Hooks"
+          ],
+          "resources": [
+            {
+              "type": "course",
+              "title": "React + TypeScript: Advanced Patterns",
+              "url": "https://www.udemy.com/course/react-typescript/"
+            },
+            {
+              "type": "documentation",
+              "title": "React TypeScript Cheatsheets",
+              "url": "https://react-typescript-cheatsheet.netlify.app/"
+            }
+          ],
+          "estimated_hours": 6
+        }
+      ]
+    },
+    {
+      "phase_number": 4,
+      "title": "Server-Side Rendering & Next.js",
+      "duration_weeks": 3,
+      "description": "Master SSR, SSG, and React integration with Next.js for scalable production applications.",
+      "topics": [
+        {
+          "name": "Server-Side Rendering with React",
+          "subtopics": [
+            "SSR Fundamentals",
+            "Hydration",
+            "Streaming",
+            "React 18 SSR Features"
+          ],
+          "resources": [
+            {
+              "type": "documentation",
+              "title": "React SSR Guide",
+              "url": "https://react.dev/reference/react-dom/server"
+            },
+            {
+              "type": "video",
+              "title": "React Server Components",
+              "url": "https://www.youtube.com/watch?v=ZKfhU1G4hQw"
+            }
+          ],
+          "estimated_hours": 8
+        },
+        {
+          "name": "Next.js Advanced Usage",
+          "subtopics": [
+            "Routing & Dynamic Routes",
+            "API Routes",
+            "Incremental Static Regeneration",
+            "Middleware"
+          ],
+          "resources": [
+            {
+              "type": "documentation",
+              "title": "Next.js Documentation",
+              "url": "https://nextjs.org/docs"
+            },
+            {
+              "type": "course",
+              "title": "Next.js Advanced Course",
+              "url": "https://frontendmasters.com/courses/next-js/"
+            }
+          ],
+          "estimated_hours": 10
+        }
+      ]
+    },
+    {
+      "phase_number": 5,
+      "title": "Production-Ready Best Practices",
+      "duration_weeks": 3,
+      "description": "Focus on deployment, security, accessibility, and building resilient production-grade React apps.",
+      "topics": [
+        {
+          "name": "Deployment & CI/CD",
+          "subtopics": [
+            "Vercel, Netlify, AWS Amplify",
+            "Automated Testing Pipelines",
+            "Environment Variables",
+            "Bundle Analysis"
+          ],
+          "resources": [
+            {
+              "type": "course",
+              "title": "React Deployment Best Practices",
+              "url": "https://egghead.io/courses/deploying-react-apps"
+            },
+            {
+              "type": "documentation",
+              "title": "Vercel Deployment Docs",
+              "url": "https://vercel.com/docs/concepts/deployments"
+            }
+          ],
+          "estimated_hours": 6
+        },
+        {
+          "name": "Accessibility & Security",
+          "subtopics": [
+            "ARIA Roles & Accessibility Testing",
+            "Preventing XSS in React",
+            "Securing API Connections",
+            "Authentication Patterns"
+          ],
+          "resources": [
+            {
+              "type": "documentation",
+              "title": "React Accessibility Docs",
+              "url": "https://react.dev/reference/react-dom/components#accessibility"
+            },
+            {
+              "type": "video",
+              "title": "React Security Best Practices",
+              "url": "https://www.youtube.com/watch?v=89G3QWQCG9c"
+            }
+          ],
+          "estimated_hours": 8
+        },
+        {
+          "name": "Monitoring, Logging & Error Reporting",
+          "subtopics": [
+            "Integrating Sentry",
+            "Logging Strategies",
+            "User Feedback Handling"
+          ],
+          "resources": [
+            {
+              "type": "documentation",
+              "title": "Sentry for React",
+              "url": "https://docs.sentry.io/platforms/javascript/guides/react/"
+            },
+            {
+              "type": "video",
+              "title": "Monitoring React Apps",
+              "url": "https://www.youtube.com/watch?v=AFsDbLqQ0PQ"
+            }
+          ],
+          "estimated_hours": 6
+        }
+      ]
+    }
+  ],
+  "prerequisites": [
+    "Strong proficiency in JavaScript ES6+",
+    "Basic to intermediate React knowledge",
+    "Familiarity with web development fundamentals",
+    "Experience with Git and command-line tools"
+  ],
+  "career_outcomes": [
+    "Senior React Developer",
+    "Frontend Architect",
+    "Full Stack Engineer (React focus)",
+    "Lead UI Engineer",
+    "React Consultant"
+  ],
+  "source": "llm_generated"
+}

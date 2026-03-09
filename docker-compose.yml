@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data/generated:/data/generated   # Mirror Fly.io volume structure locally
+    env_file:
+      - .env
+    environment:
+      - GENERATED_CACHE_DIR=/data/generated
+    command: >
+      sh -c "python scripts/ingest_pdfs.py && uvicorn app.main:app --host 0.0.0.0 --port 8000"

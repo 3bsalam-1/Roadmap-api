@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.pytest_cache/
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Environment
+.env
+.env.local
+
+# Data (keep for local dev but not needed in container)
+chroma_db/
+data/pdfs/*.pdf
+
+# OS
+.DS_Store
+Thumbs.db

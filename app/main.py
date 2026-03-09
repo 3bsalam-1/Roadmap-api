@@ -1,0 +1,102 @@
+from contextlib import asynccontextmanager
+from fastapi import FastAPI, Request
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import JSONResponse
+from slowapi import Limiter, _rate_limit_exceeded_handler
+from slowapi.util import get_remote_address
+from slowapi.errors import RateLimitExceeded
+import time
+
+from app.core.config import settings
+from app.core.logging import logger
+from app.api.routes import roadmap, admin
+from app.rag.retriever import get_vector_store
+
+
+# Rate limiter
+limiter = Limiter(key_func=get_remote_address)
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    """Application lifespan events."""
+    # Startup
+    logger.info("Starting Roadmap API...")
+    
+    # Initialize rate limiter state
+    app.state.limiter = limiter
+    
+    # Warm up the vector store (initialize embeddings and Pinecone)
+    try:
+        _ = get_vector_store()
+        logger.info("Pinecone vector store initialized")
+    except Exception as e:
+        logger.warning(f"Could not initialize Pinecone on startup: {e}")
+    
+    logger.info("Roadmap API started successfully")
+    
+    yield
+    
+    # Shutdown
+    logger.info("Shutting down Roadmap API...")
+
+
+app = FastAPI(
+    title="Learning Roadmap API",
+    description="AI-powered service that generates structured learning roadmaps using RAG pipeline",
+    version="1.0.0",
+    lifespan=lifespan,
+)
+
+# Add rate limiter
+app.state.limiter = limiter
+app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
+
+# Add CORS middleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Allow all origins for development
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+
+# Request logging middleware
+@app.middleware("http")
+async def log_requests(request: Request, call_next):
+    start_time = time.time()
+    
+    response = await call_next(request)
+    
+    duration = time.time() - start_time
+    logger.info(
+        f"{request.method} {request.url.path} - {response.status_code} - {duration:.3f}s"
+    )
+    
+    return response
+
+
+# Include routers
+app.include_router(roadmap.router, prefix=settings.API_PREFIX)
+app.include_router(admin.router, prefix=settings.API_PREFIX)
+
+
+# Root endpoint
+@app.get("/")
+async def root():
+    return {
+        "name": "Learning Roadmap API",
+        "version": "1.0.0",
+        "docs": "/docs",
+    }
+
+
+# Error handler
+@app.exception_handler(Exception)
+async def global_exception_handler(request: Request, exc: Exception):
+    logger.error(f"Unhandled exception: {exc}")
+    return JSONResponse(
+        status_code=500,
+        content={"detail": "Internal server error"},
+    )
