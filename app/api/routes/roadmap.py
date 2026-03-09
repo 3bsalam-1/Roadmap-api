@@ -1,6 +1,6 @@
 import asyncio
 from fastapi import APIRouter, HTTPException, Request
-from slowapi import limiter
+from app.core.limiter import limiter
 
 from app.schemas.roadmap import (
     RoadmapRequest, 
