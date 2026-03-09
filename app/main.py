@@ -25,14 +25,9 @@ async def lifespan(app: FastAPI):
     # Initialize rate limiter state
     app.state.limiter = limiter
     
-    # Warm up the vector store (initialize embeddings and Pinecone)
-    try:
-        _ = get_vector_store()
-        logger.info("Pinecone vector store initialized")
-    except Exception as e:
-        logger.warning(f"Could not initialize Pinecone on startup: {e}")
-    
-    logger.info("Roadmap API started successfully")
+    # Don't initialize Pinecone at startup - defer to first request
+    # This avoids hanging during deployment when services might not be ready
+    logger.info("Roadmap API ready (Pinecone will initialize on first request)")
     
     yield
     
