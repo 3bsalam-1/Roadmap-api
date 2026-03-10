@@ -152,6 +152,7 @@ async def health_check() -> HealthResponse:
     from pathlib import Path
     import cloudinary
     import cloudinary.api
+    from app.core.config import settings
     
     pinecone_status = "unknown"
     doc_count = 0
